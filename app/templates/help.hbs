@@ -15,17 +15,18 @@
       <p><code>./lolMiner --pool {{config.StratumHost}}:{{config.StratumPort}} --user [YOUR_ETC_ADDRESS] -c ETC {{if (equals config.Network 'mordor') "--ecip1099-activation 84"}} --ethstratum=ETHPROXY</code></p>
       <dl class="dl-horizontal">
         <dt>YOUR_ETC_ADDRESS</dt>
-        <dd>This is your address for payouts, generate one with core-geth, or mine directly to exchange like
-          <a href="http://bittrex.com" rel="nofollow" target="_blank">Bittrex</a>.<br/>
-          <strong>Example:</strong> <code>0xda904bc07fd95e39661941b3f6daded1b8a38c71</code>.
+        <dd>This is your address for payouts, generate one with core-geth, or mine directly to exchange
+           {{!-- like
+          <a href="http://bittrex.com" rel="nofollow" target="_blank">Bittrex</a>.<br/> --}}
+          <strong>Example:</strong> <code>0x101ddc2257B386F3f0cfF7857FBe2b2EfF12fa5a</code>.
         </dd>
       </dl>
       <p>
         <strong>Full example:</strong>
-        <code>./lolMiner --pool {{config.StratumHost}}:{{config.StratumPort}} --user 0xda904bc07fd95e39661941b3f6daded1b8a38c71 -c ETC {{if (equals config.Network 'mordor') "--ecip1099-activation 84"}} --ethstratum=ETHPROXY</code>.<br/>
+        <code>./lolMiner --pool {{config.StratumHost}}:{{config.StratumPort}} --user 0x101ddc2257B386F3f0cfF7857FBe2b2EfF12fa5a -c ETC {{if (equals config.Network 'mordor') "--ecip1099-activation 84"}} --ethstratum=ETHPROXY</code>.<br/>
       </p>
     </div>
-
+{{!-- 
     <div class="col-md-6">
       <div class="page-header">
         <h3>nanominer <small>mainnet only</small> </h3>
@@ -36,14 +37,14 @@
       <h4>example config</h4>
       <pre>
 ; Address to send funds to. Change this address to yours!
-wallet = 0xda904bc07fd95e39661941b3f6daded1b8a38c71
+wallet = 0x101ddc2257B386F3f0cfF7857FBe2b2EfF12fa5a
 
 ; Coin to mine.
 coin = ETC
 
 pool1={{config.StratumHost}}:{{config.StratumPort}}
       </pre>
-    </div>
+    </div> --}}
   </div>
 
   <div class="col-md-12">
